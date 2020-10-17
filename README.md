@@ -96,7 +96,8 @@ Note: If you need to add static files to the build, like the `images` folder or 
 1. Create the new page component (extending from `PageElement` helper) in the `pages` folder. For example a `page-explore.ts`.
 
    ```typescript
-   import { html, customElement } from 'lit-element';
+   import { html } from 'lit-element';
+   import { customElement } from 'lit-element/lib/decorators';
 
    import { PageElement } from '../helpers/page-element';
 

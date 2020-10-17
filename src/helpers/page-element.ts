@@ -5,7 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { LitElement, internalProperty } from 'lit-element';
+import { LitElement } from 'lit-element';
+import { internalProperty } from 'lit-element/lib/decorators';
 import type { PropertyValues } from 'lit-element';
 import type { Route, RouterLocation } from '@vaadin/router';
 
