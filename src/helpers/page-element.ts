@@ -6,7 +6,7 @@
  */
 
 import { LitElement } from 'lit-element';
-import { internalProperty } from 'lit-element/lib/decorators';
+import { state } from 'lit-element/decorators';
 import type { PropertyValues } from 'lit-element';
 import type { Route, RouterLocation } from '@vaadin/router';
 
@@ -23,7 +23,7 @@ declare module '@vaadin/router/dist/vaadin-router' {
 }
 
 export class PageElement extends LitElement {
-  @internalProperty()
+  @state()
   protected location = {} as RouterLocation;
 
   private defaultTitleTemplate = `%s | ${config.appName}`;

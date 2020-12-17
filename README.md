@@ -97,7 +97,7 @@ Note: If you need to add static files to the build, like the `images` folder or 
 
    ```typescript
    import { html } from 'lit-element';
-   import { customElement } from 'lit-element/lib/decorators';
+   import { customElement } from 'lit-element/decorators';
 
    import { PageElement } from '../helpers/page-element';
 

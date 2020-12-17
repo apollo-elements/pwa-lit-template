@@ -6,7 +6,7 @@
  */
 
 import { LitElement, html, css } from 'lit-element';
-import { customElement, query } from 'lit-element/lib/decorators';
+import { customElement, query } from 'lit-element/decorators';
 
 import config from '../config';
 import { attachRouter, urlForName } from '../router';

@@ -6,7 +6,7 @@
  */
 
 import { html, css } from 'lit-element';
-import { customElement } from 'lit-element/lib/decorators';
+import { customElement } from 'lit-element/decorators';
 
 import { PageElement } from '../helpers/page-element';
 
