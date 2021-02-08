@@ -10,6 +10,7 @@ import { LitElement, html, css, customElement, query } from 'lit-element';
 import config from '../config';
 import { attachRouter, urlForName } from '../router';
 
+import '@apollo-elements/components/apollo-client';
 import 'pwa-helper-components/pwa-install-button.js';
 import 'pwa-helper-components/pwa-update-available.js';
 
@@ -90,7 +91,9 @@ export class AppIndex extends LitElement {
       </header>
 
       <!-- The main content is added / removed dynamically by the router -->
-      <main role="main"></main>
+      <apollo-client uri="https://api.spacex.land/graphql">
+        <main role="main"></main>
+      </apollo-client>
 
       <footer>
         <span>Environment: ${config.environment}</span>

@@ -8,11 +8,15 @@
 import { esbuildPlugin } from '@web/dev-server-esbuild';
 import { fromRollup } from '@web/dev-server-rollup';
 import replace from '@rollup/plugin-replace';
+import commonjsRollup from '@rollup/plugin-commonjs';
+
+const commonjs = fromRollup(commonjsRollup);
 
 export default {
   appIndex: 'index.html',
   nodeResolve: true,
   plugins: [
+    commonjs(),
     esbuildPlugin({ ts: true }),
     ...(process.env.NODE_ENV
       ? [
